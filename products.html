@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Men's Elegance</title>
+</head>
+<body>
+
+    <!----- header section ------>
+    <header style="background: radial-gradient(#fff, gray); width: 100%;">
+        <div class="container">
+
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logos.png" alt="logo" width="60px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Продукты</a></li>
+                        <li><a id="contact">Контакты</a></li>
+                        <li><a href="account.html">Аккаунт</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" alt="cart" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" alt="menu">
+            </div>
+
+        </div>
+    </header>
+
+    <!----- products section ------>
+
+    <div class="small-container">
+
+        <div class="row row-2">
+            <h2>Все продукты</h2>
+            <select>
+                <option>Default</option>
+                <option>По цене</option>
+                <option>По популярности</option>
+                <option>По рейтингу</option>
+                <option>По скидке</option>
+            </select>
+        </div>
+
+        <h2 class="title">Рекомендуемые продукты</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="product.html"><img src="images/product-1.jpg" alt="product1"></a>
+                <h4>Красная футболка Puma</h4>
+                <p>1.999 руб</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg" alt="product2">
+                <h4>Кроссовки HRX</h4>
+                <p>3.999 руб</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg" alt="product3">
+                <h4>Штаны</h4>
+                <p>2.999 руб</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="product4">
+                <h4>Синяя футболка Puma</h4>
+                <p>1.999 руб</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="title">Последние продукты</h2>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-5.jpg" alt="product5">
+                <h4>Кеды</h4>
+                <p>3.999 руб</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg" alt="product6">
+                <h4>Футболка черная Puma</h4>
+                <p>1.999 руб</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg" alt="product7">
+                <h4>Пара носков</h4>
+                <p>1.499 руб</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-8.jpg" alt="product8">
+                <h4>Часы FOSSIL</h4>
+                <p>9.999 руб</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.jpg" alt="product9">
+                <h4>Часы ЯQADSTER</h4>
+                <p>7.999 руб</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg" alt="product10">
+                <h4>Кроссовки HRX</h4>
+                <p>3.999 руб</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg" alt="product11">
+                <h4>Кроссовки</h4>
+                <p>1.999 руб</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.png" alt="product12">
+                <h4>Штаны Nike</h4>
+                <p>4.999 руб</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+
+    </div>
+
+    <!----- footer section ------>
+
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <a href="index.html"><img src="images/logos.png" alt="logos"></a>
+                    <h1>Men's Elegance</h1>
+                    <p>Понедельник - Пятница с 08:00 до 18:00</p>
+                    <p>г. Болохово, ул. Соловцова д. 23</p>
+                    <p>+7 (920) 758-08-55</p>
+               </div>
+                <div class="footer-col-3">
+                    <h3>Ссылки</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i>Главная</a></li>
+                        <li><a href="#"><i class="fa-brands fa-product-hunt"></i>Продукты</a></li>
+                        <li><a href="#"><i class="fa-solid fa-address-book"></i>Контакты</a></li>
+                        <li><a href="account.html"><i class="fa-solid fa-file-invoice"></i>Аккаунт</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Связаться</h3>
+                    <ul>
+                        <li><a href="https://vk.com/nn1les" target="_blank"><i class="fa-brands fa-vk"></i>ВКонтакте</a></li>
+                        <li><a href="https://t.me/nn1les" target="_blank"><i class="fa-brands fa-telegram"></i>Telegram</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=79207580855" target="_blank"><i class="fa-brands fa-whatsapp"></i>Whatssap</a></li>
+                        <li><a href="tel:+79207580855"><i class="fa-solid fa-phone"></i>Телефон</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-1">
+                    
+                    <div class="form-containers">
+                        <div class="form-btn">
+                            <span>Оставить заявку</span>
+                            <hr id="Indicators">
+                        </div> 
+                        <form method="post" action="sms.php">
+                            <input type="text" placeholder="Введите имя" name="name">
+                            <input type="email" placeholder="Введите почту" name="email">
+                            <input type="text" placeholder="Введите текст" name="text">
+                            <button type="submit" class="btn">Отравить</button>
+                        </form>
+            
+                      </div>
+                      
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Авторское право 2024 — Простые руководства</p>
+        </div>
+    </div>
+
+    <script>
+
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                 MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+    
+    </script>
+        
+    <script>
+    
+    document.getElementById("contact").onclick = function ()  {
+        document.getElementById("footer").scrollIntoView({behavior: "smooth"});
+    }
+    
+    </script>
+    
+
+</body>
+</html>

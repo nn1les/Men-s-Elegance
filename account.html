@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Men's Elegance</title>
+</head>
+<body>
+
+    <!----- header section ------>
+
+    <header style="background: radial-gradient(#fff, gray);">
+        <div class="container">
+
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logos.png" alt="logo" width="60px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="products.html">Продукты</a></li>
+                        <li><a id="contact">Контакты</a></li>
+                        <li><a href="#">Аккаунт</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" alt="cart" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" alt="menu">
+            </div>
+
+        </div>
+    </header>
+
+    <!----- account section ------>
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" alt="image1" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Вход</span>
+                            <span onclick="register()">Регистрация</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Введите имя" name="name">
+                            <input type="password" placeholder="Введите пароль" name="password">
+                            <button type="submit" class="btn">Войти</button>
+                            <a href="#">Восстановить пароль</a>
+                        </form>  
+                        <form id="RegForm" method="post" action="account.php">
+                            <input type="text" placeholder="Введите имя" name="name">
+                            <input type="email" placeholder="Введите почту" name="email">
+                            <input type="password" placeholder="Введите пароль" name="password">
+                            <button type="submit" class="btn">Создать</button>
+                        </form>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <a href="index.html"><img src="images/logos.png" alt="logos"></a>
+                    <h1>Men's Elegance</h1>
+                    <p>Понедельник - Пятница с 08:00 до 18:00</p>
+                    <p>г. Болохово, ул. Соловцова д. 23</p>
+                    <p>+7 (920) 758-08-55</p>
+               </div>
+                <div class="footer-col-3">
+                    <h3>Ссылки</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i>Главная</a></li>
+                        <li><a href="products.html"><i class="fa-brands fa-product-hunt"></i>Продукты</a></li>
+                        <li><a href="#"><i class="fa-solid fa-address-book"></i>Контакты</a></li>
+                        <li><a href="#"><i class="fa-solid fa-file-invoice"></i>Аккаунт</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Связаться</h3>
+                    <ul>
+                        <li><a href="https://vk.com/nn1les" target="_blank"><i class="fa-brands fa-vk"></i>ВКонтакте</a></li>
+                        <li><a href="https://t.me/nn1les" target="_blank"><i class="fa-brands fa-telegram"></i>Telegram</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=79207580855" target="_blank"><i class="fa-brands fa-whatsapp"></i>Whatssap</a></li>
+                        <li><a href="tel:+79207580855"><i class="fa-solid fa-phone"></i>Телефон</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-1">
+                    
+                    <div class="form-containers">
+                        <div class="form-btn">
+                            <span>Оставить заявку</span>
+                            <hr id="Indicators">
+                        </div> 
+                        <form method="post" action="sms.php">
+                            <input type="text" placeholder="Введите имя" name="name">
+                            <input type="email" placeholder="Введите почту" name="email">
+                            <input type="text" placeholder="Введите текст" name="text">
+                            <button type="submit" class="btn">Отравить</button>
+                        </form>
+            
+                      </div>
+
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Авторское право 2024 — Простые руководства</p>
+        </div>
+    </div>
+
+    <script>
+
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+
+    </script>
+    
+    <script>
+
+    document.getElementById("btn").onclick = function ()  {
+        document.getElementById("products").scrollIntoView({behavior: "smooth"});
+    }
+
+    document.getElementById("contact").onclick = function ()  {
+        document.getElementById("footer").scrollIntoView({behavior: "smooth"});
+    }
+
+    </script>
+
+    <script>
+
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register() {
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+
+    function login() {
+        RegForm.style.transform = "translateX(325px)";
+        LoginForm.style.transform = "translateX(325px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+
+    </script>
+
+</body>
+</html>
